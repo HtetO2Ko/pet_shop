@@ -18,3 +18,9 @@ app.secret_key = "my_pet_is_your_pet"
 api = Api(app)
 
 db = SQLAlchemy(app)
+
+db.init_app(app)
+
+@app.before_first_request
+def create_table():
+    db.create_all()
