@@ -1,4 +1,3 @@
-from db import *
 from resource.category_resource import AllCategory, Category
 from resource.pets_resource import AllPets, Pet
 from resource.user_resource import AllUser, User
