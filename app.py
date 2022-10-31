@@ -1,5 +1,4 @@
 from db import *
-from flask_jwt import JWT
 from resource.category_resource import AllCategory, Category
 from resource.pets_resource import AllPets, Pet
 from resource.user_resource import AllUser, User
