@@ -16,7 +16,7 @@ class CategoryModel(db.Model):
         return cls.query.filter_by(id=categoryid).first()
 
     def json(self):
-        return { 'category_name' : self.category_name}
+        return {"category_id" : self.id, 'category_name' : self.category_name}
         
     def insert(self):
         db.session.add(self)

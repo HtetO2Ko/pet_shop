@@ -18,7 +18,7 @@ class UserModel(db.Model):
         return cls.query.filter_by(id=userid).first()
 
     def json(self):
-        return {'id' : self.id ,  'username' : self.username, 'password' : self.password, "usertype" : self.usertype }
+        return {'user_id' : self.id ,  'username' : self.username, 'password' : self.password, "usertype" : self.usertype }
         
     def insert(self):
         db.session.add(self)
